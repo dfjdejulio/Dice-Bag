@@ -23,6 +23,7 @@
 		4747AA40225C00A0007FA46A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4747AA3F225C00A0007FA46A /* Assets.xcassets */; };
 		4747AA53225C0215007FA46A /* roll.c in Sources */ = {isa = PBXBuildFile; fileRef = 4747AA52225C0215007FA46A /* roll.c */; };
 		4747AA54225C0215007FA46A /* roll.c in Sources */ = {isa = PBXBuildFile; fileRef = 4747AA52225C0215007FA46A /* roll.c */; };
+		47D93CB0225C31720008FBB7 /* DiceResultRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D93CAF225C31720008FBB7 /* DiceResultRowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,8 @@
 		4747AA41225C00A0007FA46A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4747AA51225C0215007FA46A /* roll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = roll.h; sourceTree = "<group>"; };
 		4747AA52225C0215007FA46A /* roll.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = roll.c; sourceTree = "<group>"; };
+		47D93CAE225C31720008FBB7 /* DiceResultRowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiceResultRowController.h; sourceTree = "<group>"; };
+		47D93CAF225C31720008FBB7 /* DiceResultRowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiceResultRowController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +174,8 @@
 				4747AA3D225C009F007FA46A /* ComplicationController.m */,
 				4747AA3F225C00A0007FA46A /* Assets.xcassets */,
 				4747AA41225C00A0007FA46A /* Info.plist */,
+				47D93CAE225C31720008FBB7 /* DiceResultRowController.h */,
+				47D93CAF225C31720008FBB7 /* DiceResultRowController.m */,
 			);
 			path = "Dice Bag WatchKit Extension";
 			sourceTree = "<group>";
@@ -326,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47D93CB0225C31720008FBB7 /* DiceResultRowController.m in Sources */,
 				4747AA54225C0215007FA46A /* roll.c in Sources */,
 				4747AA3E225C009F007FA46A /* ComplicationController.m in Sources */,
 				4747AA3B225C009F007FA46A /* ExtensionDelegate.m in Sources */,

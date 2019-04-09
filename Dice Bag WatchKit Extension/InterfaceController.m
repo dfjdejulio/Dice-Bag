@@ -7,7 +7,9 @@
 //
 
 #import "InterfaceController.h"
+#import "DiceResultRowController.h"
 
+#include "roll.h"
 
 @interface InterfaceController ()
 
@@ -19,7 +21,32 @@
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
 
-    // Configure interface objects here.
+    _dieChoices = @[
+                    @"4",
+                    @"6",
+                    @"8",
+                    @"10",
+                    @"12",
+                    @"20",
+                    @"100"
+                    ];
+
+
+    NSMutableArray<WKPickerItem *> *diceList = [NSMutableArray new];
+
+    for (NSString *die in _dieChoices) {
+        WKPickerItem *item = [WKPickerItem new];
+        item.title = die;
+        [diceList addObject:item];
+    }
+
+    //DiceResultRowController* row = [_outputTable rowControllerAtIndex:0];
+    //[row.diceResultLabel setText:@"Hello, sailor!"];
+
+    // Set the picker list.
+    [_diePicker setItems:diceList];
+    // Pretend we just picked the first value.
+    [self selectDie:0];
 }
 
 - (void)willActivate {
@@ -30,6 +57,31 @@
 - (void)didDeactivate {
     // This method is called when watch view controller is no longer visible
     [super didDeactivate];
+}
+
+- (IBAction) diceCountButtonPress {
+    
+}
+
+- (IBAction) selectDie: (NSInteger) dieIndex {
+    _die = _dieChoices[dieIndex].intValue;
+}
+
+- (IBAction) rollButtonPress {
+    // Make a new row to hold the result.
+    NSIndexSet* newRow = [[NSIndexSet alloc] initWithIndex:0];
+    [_outputTable insertRowsAtIndexes:newRow withRowType:@"DiceResultRowController"];
+    DiceResultRowController* row = [_outputTable rowControllerAtIndex:0];
+
+    // Calculate the roll.
+    int r = roll(1, 1, _die);
+
+    [row.diceResultLabel setText: [NSString stringWithFormat:@"%d", r] ];
+}
+
+- (IBAction) clearButtonPress {
+    // Empty out the result list.
+    [_outputTable setRowTypes:@[]];
 }
 
 @end
