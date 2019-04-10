@@ -9,14 +9,21 @@
 #import "InterfaceController.h"
 #import "DiceResultRowController.h"
 
-#include "roll.h"
-
 @interface InterfaceController ()
 
 @end
 
 
 @implementation InterfaceController
+
+- (InterfaceController*)init {
+    // Allocate stuff that needs allocating.
+    _diceBag = [DiceBag new];
+    _dice = 3;
+    _die = 4;
+
+    return [super init];
+}
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
@@ -74,9 +81,9 @@
     DiceResultRowController* row = [_outputTable rowControllerAtIndex:0];
 
     // Calculate the roll.
-    int r = roll(1, 1, _die);
+    [_diceBag rollWithDice:_dice andDie:_die];
 
-    [row.diceResultLabel setText: [NSString stringWithFormat:@"%d", r] ];
+    [row.diceResultLabel setText: _diceBag.stringValue ];
 }
 
 - (IBAction) clearButtonPress {

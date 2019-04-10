@@ -8,6 +8,7 @@
 
 #import <WatchKit/WatchKit.h>
 #import <Foundation/Foundation.h>
+#import "DiceBag.h"
 
 @interface InterfaceController : WKInterfaceController <WKCrownDelegate>
 
@@ -18,8 +19,9 @@
 @property (weak, nonatomic) IBOutlet WKInterfaceButton* rollButton;
 @property (weak, nonatomic) IBOutlet WKInterfaceTable* outputTable;
 
-@property int count;
+@property int dice;
 @property int die;
+@property DiceBag* diceBag;
 
 - (IBAction) diceCountButtonPress;
 

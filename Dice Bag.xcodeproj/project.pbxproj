@@ -21,8 +21,8 @@
 		4747AA3B225C009F007FA46A /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4747AA3A225C009F007FA46A /* ExtensionDelegate.m */; };
 		4747AA3E225C009F007FA46A /* ComplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4747AA3D225C009F007FA46A /* ComplicationController.m */; };
 		4747AA40225C00A0007FA46A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4747AA3F225C00A0007FA46A /* Assets.xcassets */; };
-		4747AA53225C0215007FA46A /* roll.c in Sources */ = {isa = PBXBuildFile; fileRef = 4747AA52225C0215007FA46A /* roll.c */; };
-		4747AA54225C0215007FA46A /* roll.c in Sources */ = {isa = PBXBuildFile; fileRef = 4747AA52225C0215007FA46A /* roll.c */; };
+		47B74B59225D6E7D008686DB /* DiceBag.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B74B58225D6E7D008686DB /* DiceBag.m */; };
+		47B74B5A225D6E7D008686DB /* DiceBag.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B74B58225D6E7D008686DB /* DiceBag.m */; };
 		47D93CB0225C31720008FBB7 /* DiceResultRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D93CAF225C31720008FBB7 /* DiceResultRowController.m */; };
 /* End PBXBuildFile section */
 
@@ -92,8 +92,8 @@
 		4747AA3D225C009F007FA46A /* ComplicationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplicationController.m; sourceTree = "<group>"; };
 		4747AA3F225C00A0007FA46A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4747AA41225C00A0007FA46A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4747AA51225C0215007FA46A /* roll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = roll.h; sourceTree = "<group>"; };
-		4747AA52225C0215007FA46A /* roll.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = roll.c; sourceTree = "<group>"; };
+		47B74B57225D6E7D008686DB /* DiceBag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiceBag.h; sourceTree = "<group>"; };
+		47B74B58225D6E7D008686DB /* DiceBag.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiceBag.m; sourceTree = "<group>"; };
 		47D93CAE225C31720008FBB7 /* DiceResultRowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiceResultRowController.h; sourceTree = "<group>"; };
 		47D93CAF225C31720008FBB7 /* DiceResultRowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiceResultRowController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -183,8 +183,8 @@
 		4747AA4F225C0108007FA46A /* Engine */ = {
 			isa = PBXGroup;
 			children = (
-				4747AA51225C0215007FA46A /* roll.h */,
-				4747AA52225C0215007FA46A /* roll.c */,
+				47B74B57225D6E7D008686DB /* DiceBag.h */,
+				47B74B58225D6E7D008686DB /* DiceBag.m */,
 			);
 			path = Engine;
 			sourceTree = "<group>";
@@ -320,8 +320,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4747AA53225C0215007FA46A /* roll.c in Sources */,
 				4747AA14225C009E007FA46A /* ViewController.m in Sources */,
+				47B74B59225D6E7D008686DB /* DiceBag.m in Sources */,
 				4747AA1F225C009F007FA46A /* main.m in Sources */,
 				4747AA11225C009E007FA46A /* AppDelegate.m in Sources */,
 			);
@@ -332,10 +332,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				47D93CB0225C31720008FBB7 /* DiceResultRowController.m in Sources */,
-				4747AA54225C0215007FA46A /* roll.c in Sources */,
 				4747AA3E225C009F007FA46A /* ComplicationController.m in Sources */,
 				4747AA3B225C009F007FA46A /* ExtensionDelegate.m in Sources */,
 				4747AA38225C009F007FA46A /* InterfaceController.m in Sources */,
+				47B74B5A225D6E7D008686DB /* DiceBag.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
