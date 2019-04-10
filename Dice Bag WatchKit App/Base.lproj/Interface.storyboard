@@ -16,7 +16,7 @@
                     <items>
                         <group width="1" alignment="left" id="pOd-tf-b33" userLabel="Dice">
                             <items>
-                                <button width="0.40000000000000002" alignment="left" accessibilityLabel="1" title="1" id="igC-LZ-WTj">
+                                <button width="0.40000000000000002" alignment="left" accessibilityLabel="1" title="3" id="igC-LZ-WTj">
                                     <connections>
                                         <action selector="diceCountButtonPress" destination="AgC-eL-Hgc" id="Anx-rD-jQ0"/>
                                     </connections>
