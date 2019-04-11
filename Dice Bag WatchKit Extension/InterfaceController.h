@@ -21,6 +21,7 @@
 
 @property int dice;
 @property int die;
+@property int dieIndex;
 @property DiceBag* diceBag;
 
 - (IBAction) diceCountButtonPress;

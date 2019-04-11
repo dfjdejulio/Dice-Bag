@@ -21,6 +21,7 @@
     _diceBag = [DiceBag new];
     _dice = 3;
     _die = 4;
+    _dieIndex = 0;
 
     return [super init];
 }
@@ -58,6 +59,8 @@
 
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
+    [_diePicker setSelectedItemIndex: _dieIndex];
+
     [super willActivate];
 }
 
@@ -71,6 +74,7 @@
 }
 
 - (IBAction) selectDie: (NSInteger) dieIndex {
+    _dieIndex = dieIndex;
     _die = _dieChoices[dieIndex].intValue;
 }
 
